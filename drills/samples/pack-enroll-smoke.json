@@ -1,0 +1,9 @@
+{
+  "id": "security-hygiene-enroll-smoke",
+  "version": "0.4.0-enroll",
+  "title": "Enroll smoke",
+  "track": "security",
+  "drills": [
+    "sec-hy-004.json"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "security-hygiene-samples-v0",
+  "version": "0.4.0-samples",
+  "title": "Security & Hygiene samples",
+  "track": "security",
+  "drills": [
+    "sec-pi-001.json",
+    "sec-pi-002.json",
+    "sec-pi-003.json",
+    "sec-hy-004.json",
+    "sec-ethics-005.json"
+  ]
+}

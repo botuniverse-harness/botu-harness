@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+evidence/runs/*.json
+evidence/runs/*.md
+!evidence/runs/.gitkeep
+Thumbs.db
+desktop.ini
