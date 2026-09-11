@@ -1,0 +1,11 @@
+{
+  "id": "communications-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Communications (skin)",
+  "track": "communications",
+  "drills": [
+    "com-replyall-001.json",
+    "com-tone-002.json",
+    "com-audience-003.json"
+  ]
+}

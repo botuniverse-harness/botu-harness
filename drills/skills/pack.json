@@ -1,0 +1,11 @@
+{
+  "id": "skills-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Skills (skin)",
+  "track": "skills",
+  "drills": [
+    "skl-install-001.json",
+    "skl-scope-002.json",
+    "skl-write-003.json"
+  ]
+}

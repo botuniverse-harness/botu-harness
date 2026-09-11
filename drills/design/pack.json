@@ -1,0 +1,11 @@
+{
+  "id": "design-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Design (skin)",
+  "track": "design",
+  "drills": [
+    "des-official-001.json",
+    "des-brief-002.json",
+    "des-contrast-003.json"
+  ]
+}

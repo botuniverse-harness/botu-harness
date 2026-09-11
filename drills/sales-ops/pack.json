@@ -1,0 +1,11 @@
+{
+  "id": "sales-ops-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Sales Ops (skin)",
+  "track": "sales-ops",
+  "drills": [
+    "sls-pester-001.json",
+    "sls-qualify-002.json",
+    "sls-dead-003.json"
+  ]
+}

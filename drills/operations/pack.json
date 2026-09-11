@@ -1,0 +1,11 @@
+{
+  "id": "operations-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Operations (skin)",
+  "track": "operations",
+  "drills": [
+    "ops-wipe-001.json",
+    "ops-memory-002.json",
+    "ops-triage-003.json"
+  ]
+}

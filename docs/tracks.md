@@ -1,0 +1,23 @@
+# Tracks
+
+Owner picks a track. Security is the first live pack, not the whole school.
+
+Catalog: `drills/catalog.json`
+
+| Track | Status | Pack |
+|---|---|---|
+| Security | live (34 drills in the lab pack) | `drills/samples/pack.json` |
+| Skills | skin (3 intro) | `drills/skills/pack.json` |
+| Engineering | skin | `drills/engineering/pack.json` |
+| Design | skin | `drills/design/pack.json` |
+| Sales ops | skin | `drills/sales-ops/pack.json` |
+| Communications | skin | `drills/communications/pack.json` |
+| Operations | skin | `drills/operations/pack.json` |
+
+Skin means a few graded intro drills, not a full term. Nightly dogfood stays on security until an outsider enrolls.
+
+```bash
+python harness/src/run_drills.py --adapter mock --pack drills/design/pack.json
+```
+
+Language: drilled / graded / trained. Never certified.

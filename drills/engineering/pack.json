@@ -1,0 +1,11 @@
+{
+  "id": "engineering-skin-v0",
+  "version": "0.1.0",
+  "title": "School of Engineering (skin)",
+  "track": "engineering",
+  "drills": [
+    "eng-pipe-001.json",
+    "eng-review-002.json",
+    "eng-env-003.json"
+  ]
+}

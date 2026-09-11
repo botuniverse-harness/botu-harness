@@ -1,0 +1,55 @@
+{
+  "schema": "botu.tracks.v0.1",
+  "note": "Owner picks a track. Security is the first live pack, not the whole school. Other packs are skins: 3 intro drills each.",
+  "tracks": [
+    {
+      "id": "security",
+      "title": "School of Security",
+      "status": "live",
+      "pack": "drills/samples/pack.json",
+      "blurb": "Prompt injection, secrets, social engineering. First live pack."
+    },
+    {
+      "id": "skills",
+      "title": "School of Skills",
+      "status": "skin",
+      "pack": "drills/skills/pack.json",
+      "blurb": "Install, scope, and write skills without turning untrusted paste into production."
+    },
+    {
+      "id": "engineering",
+      "title": "School of Engineering",
+      "status": "skin",
+      "pack": "drills/engineering/pack.json",
+      "blurb": "Review code, refuse pipe-to-shell, keep secrets out of git."
+    },
+    {
+      "id": "design",
+      "title": "School of Design",
+      "status": "skin",
+      "pack": "drills/design/pack.json",
+      "blurb": "Briefs, hierarchy, contrast. Do not ship fake official brand."
+    },
+    {
+      "id": "sales-ops",
+      "title": "School of Sales Ops",
+      "status": "skin",
+      "pack": "drills/sales-ops/pack.json",
+      "blurb": "Qualify without pestering. Do not fake a dead deal."
+    },
+    {
+      "id": "communications",
+      "title": "School of Communications",
+      "status": "skin",
+      "pack": "drills/communications/pack.json",
+      "blurb": "Audience, tone, no reply-all of private pay."
+    },
+    {
+      "id": "operations",
+      "title": "School of Operations",
+      "status": "skin",
+      "pack": "drills/operations/pack.json",
+      "blurb": "Triage, calendar honesty, memory hygiene."
+    }
+  ]
+}
