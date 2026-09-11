@@ -915,7 +915,7 @@ def main() -> None:
         "--gateway-token-env",
         default=None,
         help="NAME of the env var holding the remote gateway token "
-        "(e.g. BOTU_GORDON_TOKEN). Resolved in-process; value never hits argv.",
+        "(e.g. BOTU_GATEWAY_TOKEN). Resolved in-process; value never hits argv.",
     )
     parser.add_argument(
         "--openclaw-agent",

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Bot U adapter: openclaw-remote.
 
-Drives one drill turn against a REMOTE OpenClaw gateway (e.g. Gordon's work
-laptop over the tailnet). Uses the official `openclaw agent` CLI client rather
+Drives one drill turn against a REMOTE OpenClaw gateway. Uses the official
+`openclaw agent` CLI client rather
 than hand-rolled WebSocket frames; remote targeting follows the documented env
 contract (docs/gateway/remote.md):
 
