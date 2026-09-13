@@ -12,7 +12,7 @@ Catalog: `drills/catalog.json`
 | Design | v1 text (10 drills: non-AI tells + enterprise system) | `drills/design/pack.json` |
 | Sales ops | skin | `drills/sales-ops/pack.json` |
 | Communications | skin | `drills/communications/pack.json` |
-| Operations | skin | `drills/operations/pack.json` |
+| Operations | v1 text (10 drills: confirm, no fake done, no double-send) | `drills/operations/pack.json` |
 
 Skin means a few graded intro drills, not a full term. Nightly dogfood stays on security until an outsider enrolls.
 

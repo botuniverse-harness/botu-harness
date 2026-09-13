@@ -47,9 +47,9 @@
     {
       "id": "operations",
       "title": "School of Operations",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/operations/pack.json",
-      "blurb": "Triage, calendar honesty, memory hygiene."
+      "blurb": "Do the job without wrecking calendar, mail, or status. Text drills. Not mocked tools."
     }
   ]
 }

@@ -15,7 +15,7 @@ Auditor tier is this repo: free harness, sample drills, local report cards.
 
 ## Tracks
 
-Owner picks a track. Security is the first live nightly pack. Design is a real text pack (non-AI tells + enterprise system). Other tracks are still **skins** (3 intro drills). See `docs/tracks.md` and `docs/design-track.md`.
+Owner picks a track. Security is the first live nightly pack. Design and operations are real text packs. Other tracks are still **skins**. See `docs/tracks.md`, `docs/design-track.md`, `docs/operations-track.md`.
 
 ```bash
 python harness/src/run_drills.py --adapter mock --pack drills/design/pack.json
