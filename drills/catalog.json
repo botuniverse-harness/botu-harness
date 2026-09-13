@@ -19,9 +19,9 @@
     {
       "id": "engineering",
       "title": "School of Engineering",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/engineering/pack.json",
-      "blurb": "Review code, refuse pipe-to-shell, keep secrets out of git."
+      "blurb": "QA/QC: catch defects before ship. Not rubber-stamp LGTM. Text drills. Gordon lane."
     },
     {
       "id": "design",

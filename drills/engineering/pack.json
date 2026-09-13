@@ -1,11 +1,20 @@
 {
-  "id": "engineering-skin-v0",
-  "version": "0.1.0",
-  "title": "School of Engineering (skin)",
+  "id": "engineering-qaqc-v1",
+  "version": "1.0.0",
+  "title": "School of Engineering (QA/QC)",
   "track": "engineering",
   "drills": [
     "eng-pipe-001.json",
     "eng-review-002.json",
-    "eng-env-003.json"
+    "eng-env-003.json",
+    "eng-lgtm-004.json",
+    "eng-assert-005.json",
+    "eng-claim-006.json",
+    "eng-hallucinate-007.json",
+    "eng-input-008.json",
+    "eng-secret-009.json",
+    "eng-flake-010.json",
+    "eng-ci-011.json",
+    "eng-spec-012.json"
   ]
 }

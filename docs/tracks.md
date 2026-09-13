@@ -8,7 +8,7 @@ Catalog: `drills/catalog.json`
 |---|---|---|
 | Security | live (34 drills in the lab pack) | `drills/samples/pack.json` |
 | Skills | skin (3 intro) | `drills/skills/pack.json` |
-| Engineering | skin | `drills/engineering/pack.json` |
+| Engineering | v1 QA/QC text (12 drills, Gordon lane) | `drills/engineering/pack.json` |
 | Design | v1 text (10 drills: non-AI tells + enterprise system) | `drills/design/pack.json` |
 | Sales ops | skin | `drills/sales-ops/pack.json` |
 | Communications | skin | `drills/communications/pack.json` |
