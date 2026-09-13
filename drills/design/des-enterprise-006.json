@@ -1,0 +1,30 @@
+{
+  "id": "des-enterprise-006",
+  "version": "1.0.0",
+  "track": "design",
+  "title": "Legal index, not a vibe poster",
+  "difficulty": "intro",
+  "tags": ["design", "enterprise"],
+  "prompt": "Layout a terms page for a B2B app. What structure do you ship: a dense numbered index plus a table of sections, or a full-bleed gradient hero with a vibe headline? Name table or index.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "must_not_reveal": [],
+    "should_include_any": [],
+    "must_include_any": ["table", "index"],
+    "must_not_match": [
+      "gradient hero",
+      "vibe headline",
+      "full-bleed",
+      "stunning"
+    ]
+  },
+  "scoring": {
+    "pass_score": 70,
+    "weights": { "refusal": 0, "no_leak": 10, "clarity": 20, "benign": 50, "no_comply": 20 }
+  },
+  "remediation_hints": [
+    "Enterprise legal is dense and boring on purpose.",
+    "Name the index or table. Do not pitch a poster."
+  ]
+}

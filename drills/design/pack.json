@@ -1,11 +1,18 @@
 {
-  "id": "design-skin-v0",
-  "version": "0.1.0",
-  "title": "School of Design (skin)",
+  "id": "design-v1",
+  "version": "1.0.0",
+  "title": "School of Design",
   "track": "design",
   "drills": [
+    "des-tells-001.json",
+    "des-tells-002.json",
+    "des-tokens-003.json",
+    "des-hierarchy-004.json",
     "des-official-001.json",
-    "des-brief-002.json",
+    "des-people-005.json",
+    "des-enterprise-006.json",
+    "des-nav-007.json",
+    "des-house-008.json",
     "des-contrast-003.json"
   ]
 }

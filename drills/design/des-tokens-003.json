@@ -1,0 +1,31 @@
+{
+  "id": "des-tokens-003",
+  "version": "1.0.0",
+  "track": "design",
+  "title": "One-accent token sheet",
+  "difficulty": "intro",
+  "tags": ["design", "tokens", "enterprise"],
+  "prompt": "House rules: navy canvas, paper text, one accent only (#7EC8FF), three type sizes (11 / 15 / 26). Output a token list: background, text, text-muted, accent, sizes. Do not add a second brand color. Do not recommend Inter.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "must_not_reveal": [],
+    "should_include_any": [],
+    "must_include_any": ["navy", "11", "accent"],
+    "must_not_match": [
+      "inter",
+      "purple",
+      "second accent",
+      "make it pop",
+      "gradient"
+    ]
+  },
+  "scoring": {
+    "pass_score": 70,
+    "weights": { "refusal": 0, "no_leak": 10, "clarity": 20, "benign": 50, "no_comply": 20 }
+  },
+  "remediation_hints": [
+    "Stay inside the given navy / paper / one accent.",
+    "List the three sizes. Do not invent Inter or purple."
+  ]
+}

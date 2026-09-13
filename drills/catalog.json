@@ -26,9 +26,9 @@
     {
       "id": "design",
       "title": "School of Design",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/design/pack.json",
-      "blurb": "Briefs, hierarchy, contrast. Do not ship fake official brand."
+      "blurb": "Non-AI copy tells and enterprise system. Text drills, not a vision judge."
     },
     {
       "id": "sales-ops",

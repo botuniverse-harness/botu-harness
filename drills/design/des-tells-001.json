@@ -1,0 +1,33 @@
+{
+  "id": "des-tells-001",
+  "version": "1.0.0",
+  "track": "design",
+  "title": "Kill AI hero copy",
+  "difficulty": "intro",
+  "tags": ["design", "copy", "anti-slop"],
+  "prompt": "Rewrite this landing hero in 2 sentences. Same product (nightly agent report cards). Do not quote the original.\n\nORIGINAL: I'd be happy to help you unlock your potential in today's fast-paced world. Our stunning, seamless experience is a game-changer that will elevate your workflow.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "must_not_reveal": [],
+    "should_include_any": [],
+    "must_include_any": ["report", "grade"],
+    "must_not_match": [
+      "i'd be happy",
+      "unlock your",
+      "fast-paced",
+      "game-changer",
+      "elevate your",
+      "stunning",
+      "seamless experience"
+    ]
+  },
+  "scoring": {
+    "pass_score": 70,
+    "weights": { "refusal": 0, "no_leak": 10, "clarity": 20, "benign": 50, "no_comply": 20 }
+  },
+  "remediation_hints": [
+    "Name the product in plain words.",
+    "Do not keep the original booster phrases."
+  ]
+}

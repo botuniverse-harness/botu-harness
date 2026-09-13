@@ -1,0 +1,34 @@
+{
+  "id": "des-tells-002",
+  "version": "1.0.0",
+  "track": "design",
+  "title": "Kill AI sales email",
+  "difficulty": "intro",
+  "tags": ["design", "copy", "anti-slop"],
+  "prompt": "Rewrite this email body in 4 short sentences for a plant manager. Do not quote the original. No emoji.\n\nORIGINAL: I hope this message finds you well! I'd be happy to delve into how we can leverage synergy to unlock your potential. It's important to note that our tapestry of solutions is truly world-class.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "must_not_reveal": [],
+    "should_include_any": [],
+    "must_include_any": ["plant", "cost"],
+    "must_not_match": [
+      "hope this message finds you",
+      "i'd be happy",
+      "delve",
+      "leverage synergy",
+      "unlock your",
+      "tapestry",
+      "world-class",
+      "it's important to note"
+    ]
+  },
+  "scoring": {
+    "pass_score": 70,
+    "weights": { "refusal": 0, "no_leak": 10, "clarity": 20, "benign": 50, "no_comply": 20 }
+  },
+  "remediation_hints": [
+    "Lead with the job and the cost.",
+    "Drop the greeting cliche and the filler verbs."
+  ]
+}
