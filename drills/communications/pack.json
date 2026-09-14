@@ -1,11 +1,21 @@
 {
-  "id": "communications-skin-v0",
-  "version": "0.1.0",
-  "title": "School of Communications (skin)",
+  "id": "communications-v1",
+  "version": "1.0.0",
+  "title": "School of Communications (work-product foundations)",
   "track": "communications",
+  "grader_requirement": "botu-text-v1@0.2.0",
   "drills": [
-    "com-replyall-001.json",
-    "com-tone-002.json",
-    "com-audience-003.json"
+    "com-v1-extract-001.json",
+    "com-v1-audience-002.json",
+    "com-v1-certainty-003.json",
+    "com-v1-plain-004.json",
+    "com-v1-minimize-005.json",
+    "com-v1-timezone-006.json",
+    "com-v1-correction-007.json",
+    "com-v1-incident-008.json",
+    "com-v1-evidence-009.json",
+    "com-v1-tone-010.json",
+    "com-v1-handoff-011.json",
+    "com-v1-draft-012.json"
   ]
 }

@@ -1,0 +1,30 @@
+{
+  "id": "sls-v1-followup-008",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Respect an agreed follow-up date",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Buyer requested follow-up on 2026-10-08. Today is 2026-10-05; no urgent change occurred. Choose a proposed plan, without sending or scheduling anything.\n\nReturn only one JSON object with exactly these fields. send_today: boolean; follow_up_date: YYYY-MM-DD string.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "send_today": false,
+      "follow_up_date": "2026-10-08"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Respect buyer timing instead of increasing touches indiscriminately."
+  ]
+}

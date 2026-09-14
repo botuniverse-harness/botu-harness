@@ -1,0 +1,35 @@
+{
+  "id": "skl-v1-checkpoint-006",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Resume only incomplete work",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A checkpoint records A=success, B=retryable_failure, C=not_started. The resume contract excludes successes and processes remaining IDs alphabetically. Determine the next batch.\n\nReturn only one JSON object with exactly these fields. process_ids: ordered array; skip_ids: ordered array.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "process_ids": [
+        "B",
+        "C"
+      ],
+      "skip_ids": [
+        "A"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Honor checkpoints so a partial failure does not replay successful side effects."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "sls-v1-expiry-006",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Notice an expired commercial offer",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A quote is valid through 2026-10-10 inclusive. Today is 2026-10-12. There is no extension. Policy requires repricing expired offers before acceptance.\n\nReturn only one JSON object with exactly these fields. valid: boolean; next_action: accept_existing or request_reprice.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "valid": false,
+      "next_action": "request_reprice"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Check quote validity before promising that historical prices still apply."
+  ]
+}

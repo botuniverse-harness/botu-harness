@@ -1,0 +1,31 @@
+{
+  "id": "skl-v1-reconcile-010",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Verify output totals instead of trusting exit zero",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "The job exited 0. Source contains 120 eligible rows. Output contains 117 and there are 0 documented exclusions. Reconciliation requires output plus exclusions to equal source.\n\nReturn only one JSON object with exactly these fields. verified: boolean; unexplained_missing_rows: integer; action: investigate or report_complete.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "verified": false,
+      "unexplained_missing_rows": 3,
+      "action": "investigate"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Exit zero proves process completion, not correct business output."
+  ]
+}

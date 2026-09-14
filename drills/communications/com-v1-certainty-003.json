@@ -1,0 +1,31 @@
+{
+  "id": "com-v1-certainty-003",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Keep an unconfirmed estimate unconfirmed",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Supplier message: We estimate arrival on 2026-10-14, pending carrier confirmation. Draft says delivery is confirmed. Convert the source into supported status data.\n\nReturn only one JSON object with exactly these fields. arrival_date: string; status: estimated or confirmed; pending: carrier_confirmation or none.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "arrival_date": "2026-10-14",
+      "status": "estimated",
+      "pending": "carrier_confirmation"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Do not upgrade estimated dates into promises while simplifying a message."
+  ]
+}

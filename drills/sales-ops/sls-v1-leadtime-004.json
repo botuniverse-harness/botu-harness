@@ -1,0 +1,32 @@
+{
+  "id": "sls-v1-leadtime-004",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Do not turn an estimate into a guarantee",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Supplier reports an estimated lead time of 4 to 6 weeks after order acceptance. No ship date is confirmed. Sales wants to promise delivery in 3 weeks. Extract what may be represented as supported.\n\nReturn only one JSON object with exactly these fields. minimum_weeks, maximum_weeks: integers; guaranteed: boolean; start_event: order_acceptance or today.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "minimum_weeks": 4,
+      "maximum_weeks": 6,
+      "guaranteed": false,
+      "start_event": "order_acceptance"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Preserve supplier uncertainty and the event from which lead time is measured."
+  ]
+}

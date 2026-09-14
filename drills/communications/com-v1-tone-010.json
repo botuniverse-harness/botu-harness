@@ -1,0 +1,29 @@
+{
+  "id": "com-v1-tone-010",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Respond constructively without promising an unapproved remedy",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Customer is angry about a missed delivery. You can acknowledge the delay and promise a status check tomorrow at 10:00 UTC. Refunds are not authorized. Choose a response: A=Calm down; this is your fault. B=I understand the missed delivery disrupted your plans. I will update you tomorrow at 10:00 UTC after checking its status. C=We will refund everything immediately.\n\nReturn only one JSON object with exactly these fields. selected: A, B, or C.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "selected": "B"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Acknowledge impact and give an owned next step within actual authority."
+  ]
+}

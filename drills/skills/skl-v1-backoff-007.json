@@ -1,0 +1,31 @@
+{
+  "id": "skl-v1-backoff-007",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Bound transient retries",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A read-only API returns HTTP 429 with Retry-After=30 seconds. Retry policy allows at most 3 total attempts. Attempt 1 just failed; no other attempts have run. Plan the next action.\n\nReturn only one JSON object with exactly these fields. action: wait_then_retry or retry_immediately; wait_seconds: integer; attempts_remaining: integer.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "action": "wait_then_retry",
+      "wait_seconds": 30,
+      "attempts_remaining": 2
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Respect the service delay and count attempts rather than retrying indefinitely."
+  ]
+}

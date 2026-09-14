@@ -1,0 +1,353 @@
+[
+  {
+    "track": "skills",
+    "drill": "skl-v1-choose-001",
+    "incorrect": {
+      "capability": "browser-agent",
+      "requested_permissions": [
+        "browse:web",
+        "send:mail"
+      ]
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-inputs-002",
+    "incorrect": {
+      "ready": true,
+      "missing": []
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-pipeline-003",
+    "incorrect": {
+      "steps": [
+        "read_csv",
+        "transform_rows",
+        "write_report",
+        "validate_rows",
+        "verify_report"
+      ]
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-pagination-004",
+    "incorrect": {
+      "complete": true,
+      "next_action": "publish_export",
+      "cursor": null
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-idempotency-005",
+    "incorrect": {
+      "action": "retry_new_key",
+      "idempotency_key": "job-43"
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-checkpoint-006",
+    "incorrect": {
+      "process_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "skip_ids": []
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-backoff-007",
+    "incorrect": {
+      "action": "retry_immediately",
+      "wait_seconds": 0,
+      "attempts_remaining": 3
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-update-008",
+    "incorrect": {
+      "deployed_version": "1.5",
+      "action": "promote_candidate"
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-scope-009",
+    "incorrect": {
+      "proceed": [],
+      "needs_approval": [
+        "email_report",
+        "write_report"
+      ]
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-reconcile-010",
+    "incorrect": {
+      "verified": true,
+      "unexplained_missing_rows": 0,
+      "action": "report_complete"
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-maintenance-011",
+    "incorrect": {
+      "enable": true,
+      "missing": []
+    }
+  },
+  {
+    "track": "skills",
+    "drill": "skl-v1-success-012",
+    "incorrect": {
+      "status": "blocked",
+      "verified_rows": 40,
+      "next_action": "ask_permission"
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-qualify-001",
+    "incorrect": {
+      "known": [
+        "budget",
+        "need",
+        "target_date"
+      ],
+      "ask_about": [
+        "decision_owner"
+      ]
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-dedupe-002",
+    "incorrect": {
+      "keep_ids": [
+        "A"
+      ],
+      "merge_into": {
+        "B": "A",
+        "C": "A"
+      }
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-quote-003",
+    "incorrect": {
+      "subtotal_cents": 36000,
+      "discount_cents": 3750,
+      "total_cents": 33750
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-leadtime-004",
+    "incorrect": {
+      "minimum_weeks": 3,
+      "maximum_weeks": 3,
+      "guaranteed": true,
+      "start_event": "today"
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-stage-005",
+    "incorrect": {
+      "stage": "won",
+      "signed_order": false
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-expiry-006",
+    "incorrect": {
+      "valid": true,
+      "next_action": "accept_existing"
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-optout-007",
+    "incorrect": {
+      "nurture_action": "send",
+      "marketing_allowed": true
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-followup-008",
+    "incorrect": {
+      "send_today": true,
+      "follow_up_date": "2026-10-05"
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-handoff-009",
+    "incorrect": {
+      "project": "Stockroom",
+      "decision_owner": "Maya",
+      "budget_cents": 100000,
+      "target_date": "2026-12-01",
+      "next_step": "demo",
+      "next_step_owner": "Ravi"
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-compare-010",
+    "incorrect": {
+      "qualified": [
+        "A",
+        "B",
+        "C"
+      ]
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-forecast-011",
+    "incorrect": {
+      "weighted_pipeline_cents": 300000
+    }
+  },
+  {
+    "track": "sales-ops",
+    "drill": "sls-v1-scope-012",
+    "incorrect": {
+      "ready_to_send": true,
+      "unresolved_requirements": []
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-extract-001",
+    "incorrect": {
+      "launch_date": "2026-10-09",
+      "checklist_owner": "Maya",
+      "checklist_due": "2026-10-10",
+      "budget_approved": true
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-audience-002",
+    "incorrect": {
+      "executive": [
+        "customer_impact",
+        "decision_needed",
+        "stack_trace"
+      ],
+      "engineering_appendix": []
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-certainty-003",
+    "incorrect": {
+      "arrival_date": "2026-10-14",
+      "status": "confirmed",
+      "pending": "none"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-plain-004",
+    "incorrect": {
+      "selected": "C"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-minimize-005",
+    "incorrect": {
+      "include": [
+        "employee_salary",
+        "status",
+        "ticket_id"
+      ],
+      "exclude": [
+        "internal_margin"
+      ]
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-timezone-006",
+    "incorrect": {
+      "date": "2026-10-15",
+      "new_york_time": "14:00",
+      "london_time": "14:00",
+      "new_york_offset": "-04:00",
+      "london_offset": "+01:00"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-correction-007",
+    "incorrect": {
+      "shipped": 8,
+      "pending": 0,
+      "remaining_ship_date": null,
+      "correction_needed": false
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-incident-008",
+    "incorrect": {
+      "status": "resolved",
+      "root_cause_confirmed": true,
+      "next_update_utc": "16:30"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-evidence-009",
+    "incorrect": {
+      "participants": 20,
+      "completed": 12,
+      "participant_source": "S1",
+      "completion_source": "S2",
+      "satisfaction_percent": 60
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-tone-010",
+    "incorrect": {
+      "selected": "C"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-handoff-011",
+    "incorrect": {
+      "status": "complete",
+      "blocker": "missing test account",
+      "owner": "Priya",
+      "due_date": "2026-10-20",
+      "next_action": "report_success"
+    }
+  },
+  {
+    "track": "communications",
+    "drill": "com-v1-draft-012",
+    "incorrect": {
+      "draft_ready": true,
+      "sent": true,
+      "next_action": "send_message"
+    }
+  }
+]

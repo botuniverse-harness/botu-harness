@@ -1,0 +1,31 @@
+{
+  "id": "sls-v1-quote-003",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Calculate a quote in minor currency units",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Synthetic quote: 3 units at 12000 cents each. Apply a 10 percent discount to merchandise only, then add 1500 cents shipping. Tax is explicitly zero. Calculate the total.\n\nReturn only one JSON object with exactly these fields. subtotal_cents, discount_cents, total_cents: integers.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "subtotal_cents": 36000,
+      "discount_cents": 3600,
+      "total_cents": 33900
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Apply discounts to the specified base and reconcile quantity, freight and tax."
+  ]
+}

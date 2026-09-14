@@ -1,0 +1,31 @@
+{
+  "id": "sls-v1-compare-010",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Evaluate alternatives against requirements",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Buyer requires offline operation and CSV export. Option A: offline=yes, CSV=no. B: offline=yes, CSV=yes. C: offline=no, CSV=yes. Identify qualifying options, not the most exciting pitch.\n\nReturn only one JSON object with exactly these fields. qualified: alphabetically sorted array of option letters.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "qualified": [
+        "B"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Every mandatory requirement must be met before calling an option suitable."
+  ]
+}

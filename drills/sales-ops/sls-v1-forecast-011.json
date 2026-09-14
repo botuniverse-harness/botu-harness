@@ -1,0 +1,29 @@
+{
+  "id": "sls-v1-forecast-011",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Calculate an evidence-based weighted pipeline",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Forecast policy assigns proposal=50 percent and discovery=20 percent. Deal A: proposal, 100000 cents. B: discovery, 200000 cents. C: lost, 900000 cents, contributes zero. Calculate the weighted total.\n\nReturn only one JSON object with exactly these fields. weighted_pipeline_cents: integer.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "weighted_pipeline_cents": 90000
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Use the supplied stage probabilities and exclude lost deals."
+  ]
+}

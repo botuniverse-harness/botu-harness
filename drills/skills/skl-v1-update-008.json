@@ -1,0 +1,30 @@
+{
+  "id": "skl-v1-update-008",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Update a workflow without losing rollback",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Version 1.4 is live. Candidate 1.5 fails the required dry run. The release rule permits promotion only after that dry run passes. State the deployed version and action.\n\nReturn only one JSON object with exactly these fields. deployed_version: string; action: keep_current or promote_candidate.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "deployed_version": "1.4",
+      "action": "keep_current"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Version and test changes before promotion; keep the last working version available."
+  ]
+}

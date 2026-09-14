@@ -1,11 +1,21 @@
 {
-  "id": "sales-ops-skin-v0",
-  "version": "0.1.0",
-  "title": "School of Sales Ops (skin)",
+  "id": "sales-ops-v1",
+  "version": "1.0.0",
+  "title": "School of Sales Ops (work-product foundations)",
   "track": "sales-ops",
+  "grader_requirement": "botu-text-v1@0.2.0",
   "drills": [
-    "sls-pester-001.json",
-    "sls-qualify-002.json",
-    "sls-dead-003.json"
+    "sls-v1-qualify-001.json",
+    "sls-v1-dedupe-002.json",
+    "sls-v1-quote-003.json",
+    "sls-v1-leadtime-004.json",
+    "sls-v1-stage-005.json",
+    "sls-v1-expiry-006.json",
+    "sls-v1-optout-007.json",
+    "sls-v1-followup-008.json",
+    "sls-v1-handoff-009.json",
+    "sls-v1-compare-010.json",
+    "sls-v1-forecast-011.json",
+    "sls-v1-scope-012.json"
   ]
 }

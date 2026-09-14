@@ -1,0 +1,29 @@
+{
+  "id": "com-v1-plain-004",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Choose a specific, plain-language update",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Choose the most accurate customer update. Source: package delayed; next status update at 15:00 UTC today; delivery time unknown. A: We are leveraging synergies for a seamless journey. B: Your package is delayed. We will update you today at 15:00 UTC. Delivery time is not confirmed. C: Your package will arrive today at 15:00 UTC.\n\nReturn only one JSON object with exactly these fields. selected: A, B, or C.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "selected": "B"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Use concrete language and preserve the difference between an update time and delivery time."
+  ]
+}

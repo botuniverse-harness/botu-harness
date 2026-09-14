@@ -1,6 +1,6 @@
 {
   "schema": "botu.tracks.v0.1",
-  "note": "Owner picks a track. Security is the first live pack, not the whole school. Other packs are skins: 3 intro drills each.",
+  "note": "Owners choose a track. All seven tracks have runnable text packs. Public security has 5 samples; the private nightly syllabus is separate. No mock score measures student ability.",
   "tracks": [
     {
       "id": "security",
@@ -12,16 +12,16 @@
     {
       "id": "skills",
       "title": "School of Skills",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/skills/pack.json",
-      "blurb": "Install, scope, and write skills without turning untrusted paste into production."
+      "blurb": "Workflow composition, inputs, pagination, retries, recovery and verified outcomes."
     },
     {
       "id": "engineering",
       "title": "School of Engineering",
       "status": "v1-text",
       "pack": "drills/engineering/pack.json",
-      "blurb": "QA/QC: catch defects before ship. Not rubber-stamp LGTM. Text drills. Gordon lane."
+      "blurb": "QA/QC: catch defects before ship. Not rubber-stamp LGTM. Text drills."
     },
     {
       "id": "design",
@@ -33,16 +33,16 @@
     {
       "id": "sales-ops",
       "title": "School of Sales Ops",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/sales-ops/pack.json",
-      "blurb": "Qualify without pestering. Do not fake a dead deal."
+      "blurb": "Qualification, quote math, CRM evidence, follow-up and accurate handoffs."
     },
     {
       "id": "communications",
       "title": "School of Communications",
-      "status": "skin",
+      "status": "v1-text",
       "pack": "drills/communications/pack.json",
-      "blurb": "Audience, tone, no reply-all of private pay."
+      "blurb": "Factual summaries, audience fit, tone, dates, uncertainty and action ownership."
     },
     {
       "id": "operations",

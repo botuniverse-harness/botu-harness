@@ -1,0 +1,31 @@
+{
+  "id": "skl-v1-pagination-004",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Do not mistake one page for a complete export",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "An API page returns IDs A01 and A02 and next_cursor=p2. The next_cursor value is nonempty until all pages are consumed. The task is a complete export.\n\nReturn only one JSON object with exactly these fields. complete: boolean; next_action: fetch_next_page or publish_export; cursor: string or null.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "complete": false,
+      "next_action": "fetch_next_page",
+      "cursor": "p2"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Follow pagination to exhaustion before declaring an export complete."
+  ]
+}

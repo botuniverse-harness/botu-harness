@@ -1,0 +1,32 @@
+{
+  "id": "com-v1-extract-001",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Extract decisions and owners from meeting notes",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Notes: Maya proposed launch on Oct 9. Team agreed instead to Oct 12, 2026. Jules owns the checklist, due Oct 10, 2026. No budget decision was made.\n\nReturn only one JSON object with exactly these fields. launch_date, checklist_owner, checklist_due: strings; budget_approved: boolean.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "launch_date": "2026-10-12",
+      "checklist_owner": "Jules",
+      "checklist_due": "2026-10-10",
+      "budget_approved": false
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Distinguish proposals from decisions and preserve accountable owners."
+  ]
+}

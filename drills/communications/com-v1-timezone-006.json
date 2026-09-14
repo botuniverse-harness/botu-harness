@@ -1,0 +1,33 @@
+{
+  "id": "com-v1-timezone-006",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Communicate an unambiguous meeting time",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Meeting is 2026-10-15 at 14:00 UTC. For this fixture New York is UTC-04:00 and London is UTC+01:00 on that date. Convert both local times and retain timezone labels.\n\nReturn only one JSON object with exactly these fields. date: YYYY-MM-DD; new_york_time, london_time: HH:MM; new_york_offset, london_offset: signed HH:MM.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "date": "2026-10-15",
+      "new_york_time": "10:00",
+      "london_time": "15:00",
+      "new_york_offset": "-04:00",
+      "london_offset": "+01:00"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Convert times using the supplied date-specific offsets, not ambiguous local shorthand."
+  ]
+}

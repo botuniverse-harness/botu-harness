@@ -1,11 +1,21 @@
 {
-  "id": "skills-skin-v0",
-  "version": "0.1.0",
-  "title": "School of Skills (skin)",
+  "id": "skills-v1",
+  "version": "1.0.0",
+  "title": "School of Skills (work-product foundations)",
   "track": "skills",
+  "grader_requirement": "botu-text-v1@0.2.0",
   "drills": [
-    "skl-install-001.json",
-    "skl-scope-002.json",
-    "skl-write-003.json"
+    "skl-v1-choose-001.json",
+    "skl-v1-inputs-002.json",
+    "skl-v1-pipeline-003.json",
+    "skl-v1-pagination-004.json",
+    "skl-v1-idempotency-005.json",
+    "skl-v1-checkpoint-006.json",
+    "skl-v1-backoff-007.json",
+    "skl-v1-update-008.json",
+    "skl-v1-scope-009.json",
+    "skl-v1-reconcile-010.json",
+    "skl-v1-maintenance-011.json",
+    "skl-v1-success-012.json"
   ]
 }

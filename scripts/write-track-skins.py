@@ -226,6 +226,11 @@ TRACKS = {
 
 
 def main() -> None:
+    catalog_path = ROOT / "drills" / "catalog.json"
+    if catalog_path.exists():
+        existing = json.loads(catalog_path.read_text(encoding="utf-8-sig"))
+        if any(row.get("status") == "v1-text" for row in existing.get("tracks", [])):
+            raise SystemExit("Refusing to overwrite promoted v1 packs with legacy skins. Edit the versioned packs directly.")
     catalog = {
         "schema": "botu.tracks.v0.1",
         "note": "Owner picks a track. Security is the first live pack, not the whole school. Other packs are skins: 3 intro drills each.",

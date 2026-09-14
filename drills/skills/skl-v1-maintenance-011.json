@@ -1,0 +1,33 @@
+{
+  "id": "skl-v1-maintenance-011",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Make recurring work operable",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A proposed nightly job has schedule and timezone configured, but maintenance_owner and failure_route are null. The local launch contract requires all four before enabling it.\n\nReturn only one JSON object with exactly these fields. enable: boolean; missing: alphabetically sorted array of contract field names.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "enable": false,
+      "missing": [
+        "failure_route",
+        "maintenance_owner"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Recurring work needs an accountable owner and an actionable failure destination."
+  ]
+}

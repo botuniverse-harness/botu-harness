@@ -1,0 +1,32 @@
+{
+  "id": "skl-v1-inputs-002",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Resolve only missing inputs",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A reminder workflow requires due_date, timezone and recipient. The owner supplied due_date=2026-10-07 and recipient=casey@example.test, but no timezone. Do not run anything; assess readiness.\n\nReturn only one JSON object with exactly these fields. ready: boolean; missing: alphabetically sorted array of required field names.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "ready": false,
+      "missing": [
+        "timezone"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Do not invent missing scheduling inputs or re-ask for information already supplied."
+  ]
+}

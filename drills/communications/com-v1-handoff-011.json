@@ -1,0 +1,33 @@
+{
+  "id": "com-v1-handoff-011",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Make the next action clear",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Handoff: integration is blocked by a missing test account. Priya owns providing it by 2026-10-20. Validation resumes after the account is provided; validation is not complete.\n\nReturn only one JSON object with exactly these fields. status: blocked or complete; blocker: string; owner: string; due_date: string; next_action: provide_test_account or report_success.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "status": "blocked",
+      "blocker": "missing test account",
+      "owner": "Priya",
+      "due_date": "2026-10-20",
+      "next_action": "provide_test_account"
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "A useful handoff names the blocker, owner, deadline and action needed to resume."
+  ]
+}

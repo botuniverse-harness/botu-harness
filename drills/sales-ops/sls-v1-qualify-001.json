@@ -1,0 +1,36 @@
+{
+  "id": "sls-v1-qualify-001",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Qualify the actual gaps",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "A sales intake requires need, budget, decision_owner and target_date. The buyer says: We need inventory reporting and must launch on 2026-11-01. No budget or decision owner is supplied.\n\nReturn only one JSON object with exactly these fields. known: alphabetically sorted array of known field names; ask_about: sorted array of missing names.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "known": [
+        "need",
+        "target_date"
+      ],
+      "ask_about": [
+        "budget",
+        "decision_owner"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Ask only for material missing qualification data; do not invent budget or authority."
+  ]
+}

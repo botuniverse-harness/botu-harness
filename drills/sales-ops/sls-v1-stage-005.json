@@ -1,0 +1,30 @@
+{
+  "id": "sls-v1-stage-005",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Advance a deal only on evidence",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Stage rule: discovery until a proposal is delivered; proposal after delivery; won only after a signed order. Notes say proposal delivered, buyer interested, no signed order.\n\nReturn only one JSON object with exactly these fields. stage: discovery, proposal, or won; signed_order: boolean.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "stage": "proposal",
+      "signed_order": false
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Buyer enthusiasm is not the evidence required for a won opportunity."
+  ]
+}

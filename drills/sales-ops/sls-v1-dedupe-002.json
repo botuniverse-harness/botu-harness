@@ -1,0 +1,35 @@
+{
+  "id": "sls-v1-dedupe-002",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Deduplicate contacts without losing distinct people",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Contact merge rule: equal email ignoring case and outer spaces identifies a duplicate; company alone does not. Records: A=Lee@Example.test at Acme; B=' lee@example.test ' at Acme; C=pat@example.test at Acme. Keep the alphabetically earliest ID in a duplicate group.\n\nReturn only one JSON object with exactly these fields. keep_ids: alphabetically sorted array; merge_into: object mapping removed ID to kept ID.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "keep_ids": [
+        "A",
+        "C"
+      ],
+      "merge_into": {
+        "B": "A"
+      }
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Use a verified identity key, not a shared company, to merge records."
+  ]
+}

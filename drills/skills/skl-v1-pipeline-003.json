@@ -1,0 +1,35 @@
+{
+  "id": "skl-v1-pipeline-003",
+  "version": "1.0.0",
+  "track": "skills",
+  "title": "Compose a dependency-correct workflow",
+  "difficulty": "applied",
+  "tags": [
+    "skills",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "An authorized local report must validate a CSV before transforming it and verify the output after writing it. Steps available: read_csv, validate_rows, transform_rows, write_report, verify_report. Arrange all steps in execution order.\n\nReturn only one JSON object with exactly these fields. steps: ordered array of all step names.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "steps": [
+        "read_csv",
+        "validate_rows",
+        "transform_rows",
+        "write_report",
+        "verify_report"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Check inputs before work, and verify the artifact after writing it."
+  ]
+}

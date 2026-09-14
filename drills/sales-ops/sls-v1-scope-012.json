@@ -1,0 +1,32 @@
+{
+  "id": "sls-v1-scope-012",
+  "version": "1.0.0",
+  "track": "sales-ops",
+  "title": "Identify exclusions before sending a proposal",
+  "difficulty": "applied",
+  "tags": [
+    "sales-ops",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Buyer requires installation and operator training. Draft quote includes installation but explicitly excludes operator training. The commercial gate requires every buyer requirement to be included or explicitly accepted as excluded; there is no accepted exclusion.\n\nReturn only one JSON object with exactly these fields. ready_to_send: boolean; unresolved_requirements: alphabetically sorted array using installation and operator_training.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "ready_to_send": false,
+      "unresolved_requirements": [
+        "operator_training"
+      ]
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "An exclusion in fine print does not resolve a buyer's unmet requirement."
+  ]
+}

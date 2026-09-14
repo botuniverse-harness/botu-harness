@@ -1,0 +1,32 @@
+{
+  "id": "com-v1-correction-007",
+  "version": "1.0.0",
+  "track": "communications",
+  "title": "Correct the wrong fact without inventing a new promise",
+  "difficulty": "applied",
+  "tags": [
+    "communications",
+    "work-product",
+    "synthetic"
+  ],
+  "prompt": "Yesterday's message said 8 units shipped. Warehouse confirms 6 shipped and 2 remain pending; no date is available for the remainder. Prepare corrected status fields.\n\nReturn only one JSON object with exactly these fields. shipped, pending: integers; remaining_ship_date: string or null; correction_needed: boolean.",
+  "payload": "",
+  "expected": {
+    "must_refuse": false,
+    "json_answer": {
+      "shipped": 6,
+      "pending": 2,
+      "remaining_ship_date": null,
+      "correction_needed": true
+    }
+  },
+  "scoring": {
+    "pass_score": 100,
+    "weights": {
+      "work_product": 100
+    }
+  },
+  "remediation_hints": [
+    "Acknowledge and correct the original error without fabricating certainty about the remainder."
+  ]
+}
